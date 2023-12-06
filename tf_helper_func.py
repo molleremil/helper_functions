@@ -22,6 +22,9 @@ def view_random_image(target_dir, target_class):
   return img
 
 # Plot validation and training curves seperately
+
+import matplotlib.pyplot as plt
+
 def plot_loss_curves(history):
   """
   Returns seperate loss curves for training and validation metrics
@@ -52,6 +55,9 @@ def plot_loss_curves(history):
   plt.legend();
 
 # Create a function to import an image and resize it to be able to be used with the model
+import io
+import tensorflow as tf
+
 def load_and_prep_image(filename, img_shape=224, scale=True):
   """
   Reads in an image from filename, turns it into a tensor and reshapes into

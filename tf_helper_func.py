@@ -1,4 +1,7 @@
 # Helper functions for TensorFlow
+import random
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
 
 def view_random_image(target_dir, target_class):
   # Set the target directory (view images from here)
